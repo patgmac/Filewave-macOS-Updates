@@ -38,6 +38,6 @@ is prompted to install. Add this script to "Preflight Scripts"
 
 This activation script is what performs the installation of the updates that were previously updated.
 
-Contributing
+## Contributing
 
 I would love to get community feedback on this. Feel free to file an issue if you have a problem or submit a PR if you have improvements!
