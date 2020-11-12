@@ -21,7 +21,7 @@ as they come out.
 
 The original script, insteaded for Jamf Pro, has been broken out to 3 scripts. Create a fileset with an empty payload. Add these three scripts to the appropriate script section.
 
-![Filewave Script window](http://github.com/patgmac/Filewave-macOS-Updates/images/scripts_window.png)
+![Filewave Script window](https://github.com/patgmac/Filewave-macOS-Updates/blob/main/images/scripts_window.png?raw=true)
 
 ### fw_softwareupdates_verification.sh
 
