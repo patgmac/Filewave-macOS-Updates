@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# fw_downloadupdate.sh
+# fw_softwareupdate_activation.sh
 # Modified to work with Filewave by Patrick Gallagher
 # Original comments retained, but much of it does not apply to this version.
 
