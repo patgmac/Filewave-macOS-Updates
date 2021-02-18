@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# fw_softwareupdates_prereq.sh
+# fw_softwareupdates_verification.sh
 
 
 ListOfSoftwareUpdates="/tmp/ListOfSoftwareUpdates"
@@ -74,8 +74,10 @@ else
 fi
 
 # If reboot is not required for an update, we assume it's because of Safari. So if Safari
-# is running, quit. If you'd rather not do this, remove this section. 
+# is running, quit. If you'd rather not do this, remove this section.
 if [[ "$UpdatesNoRestart" != "" ]] && [[ ! "$(/bin/ps -axc | /usr/bin/grep -e Safari$)" ]]; then
     echo "Safari is running"
     exit 1
 fi
+
+/usr/sbin/softwareupdate -d -a

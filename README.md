@@ -11,7 +11,7 @@ The other reason is to have a set-it-and-forget-it model. If you want your fleet
 
 ## Setup
 
-The original script, insteaded for Jamf Pro, has been broken out to 3 scripts. Create a fileset with an empty payload. Add these three scripts to the appropriate script section.
+The original script, intended for Jamf Pro, has been broken out to 3 scripts. Create a fileset with an empty payload. Add these three scripts to the appropriate script section.
 
 ![Filewave Script window](https://github.com/patgmac/Filewave-macOS-Updates/blob/main/images/scripts_window.png?raw=true)
 
@@ -20,10 +20,6 @@ Set the Properties for the fileset to only work with the macOS platform. As well
 ### fw_softwareupdates_verification.sh
 
 This script will determine if updates are required. As well as check that other conditions are met, such as confirming the device is connected to power, filevault is not in the process of encrypting, and there are no power assertions (presentation or web conferencing apps)
-
-### fw_downloadupdates_preflight.sh
-
-If the previous script passed, this script will download the updates before the user is prompted to install. Add this script to "Preflight Scripts"
 
 ### fw_softwareupdate_activation.sh
 
